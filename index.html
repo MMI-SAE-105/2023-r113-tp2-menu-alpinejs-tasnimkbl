@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false}">
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -21,6 +21,10 @@
         position: relative; /* pour appliquer z-index */
         z-index: 10; /* pour que le bouton soit au dessus du menu */
       }
+      .noscroll,
+      .noscroll body {
+        overflow: hidden;
+        }
     </style>
   </head>
   <body>
