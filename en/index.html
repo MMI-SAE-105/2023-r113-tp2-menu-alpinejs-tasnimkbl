@@ -44,6 +44,7 @@
     <!-- https://emmet.io/ -->
     <!-- header>h1{Test de menu} -->
     <header>
+        <a href="/fr/index.html">FR</a>
         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
             menu
         </button>
@@ -51,8 +52,8 @@
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.5000ms class="menu">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="cats/index.html">Cats</a></li>
-                <li><a href="dogs/index.html">Dogs</a></li>
+                <li><a href="/en/cats/index.html">Cats</a></li>
+                <li><a href="/en/dogs/index.html">Dogs</a></li>
             </ul>
         </nav>
     </header>
