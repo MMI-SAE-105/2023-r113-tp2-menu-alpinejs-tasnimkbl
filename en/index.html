@@ -44,7 +44,7 @@
     <!-- https://emmet.io/ -->
     <!-- header>h1{Test de menu} -->
     <header>
-        <a href="/fr/index.html">FR</a>
+        <a href="/fr/index.html" onclick="document.cookie = `nf_lang=fr; path=/ ; SameSite=Strict`">FR</a>
         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
             menu
         </button>
